@@ -155,6 +155,8 @@ body {
     width: 540px;
     height: 154px;
     margin: 0 0 0 30px;
+    position: relative;
+    top: 47px;
   }
   .container__storage-background {
     width: 450px;
@@ -172,7 +174,7 @@ body {
     position: absolute;
     width: 0;
     height: 0;
-    bottom: -22px;
+    bottom: -21px;
     right: 0;
     border-top: 22px solid hsl(243deg, 100%, 93%);
     border-left: 22px solid transparent;
