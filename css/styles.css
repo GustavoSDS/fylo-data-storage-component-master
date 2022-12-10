@@ -57,7 +57,7 @@ body {
   padding: 30px 30px 0 30px;
 }
 .container__description {
-  color: hsl(229deg, 7%, 55%);
+  color: hsl(243deg, 100%, 93%);
   margin-bottom: 15px;
 }
 .container__description span {
@@ -68,7 +68,7 @@ body {
   width: 262px;
   height: 20px;
   border-radius: 12px;
-  background-color: hsl(229deg, 57%, 11%);
+  background-color: hsla(229deg, 57%, 11%, 0.5);
   display: grid;
   align-content: center;
 }
@@ -81,6 +81,7 @@ body {
   display: grid;
   align-items: center;
   justify-content: flex-end;
+  filter: brightness(1);
 }
 .container__storage-dot {
   width: 10px;
@@ -158,15 +159,18 @@ body {
     position: relative;
     top: 47px;
   }
+  .container__description {
+    margin-top: 5px;
+  }
   .container__storage-background {
-    width: 450px;
+    width: 470px;
   }
   .container__storage {
-    width: 340px;
+    width: 345px;
   }
   .container__storage-busy {
-    left: 269px;
-    top: -160px;
+    left: 290px;
+    top: -157px;
     border-radius: 10px 10px 0px 10px;
   }
   .container__storage-busy::after {
