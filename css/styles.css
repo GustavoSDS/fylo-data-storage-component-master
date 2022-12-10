@@ -59,6 +59,8 @@ body {
 .container__description {
   color: hsl(243deg, 100%, 93%);
   margin-bottom: 15px;
+  font-size: 1.3em;
+  font-weight: 400;
 }
 .container__description span {
   color: hsl(243deg, 100%, 93%);
@@ -110,12 +112,12 @@ body {
   align-content: center;
   justify-content: center;
 }
-.container__storage-busy h1 {
+.container__storage-busy p {
   font-size: 2.2em;
   font-weight: 700;
   letter-spacing: 1px;
 }
-.container__storage-busy h1 span {
+.container__storage-busy p span {
   font-size: 15px;
   text-transform: uppercase;
   color: hsl(229deg, 7%, 55%);
@@ -184,11 +186,11 @@ body {
     border-top: 22px solid white;
     border-left: 22px solid transparent;
   }
-  .container__storage-busy h1 {
+  .container__storage-busy p {
     font-size: 2.9em;
     padding-bottom: 8px;
   }
-  .container__storage-busy h1 span {
+  .container__storage-busy p span {
     font-size: 14px;
   }
 }
