@@ -154,6 +154,7 @@ body {
   .container__section-two {
     width: 540px;
     height: 154px;
+    margin: 0 0 0 30px;
   }
   .container__storage-background {
     width: 450px;
