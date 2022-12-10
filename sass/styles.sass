@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap')
+
+$Gradient-orange: hsl(6, 100%, 80%)
+$Gradient-rose: hsl(335, 100%, 65%)
+
+$Pale-Blue: hsl(243, 100%, 93%)
+$Grayish-Blue: hsl(229, 7%, 55%)
+$Dark-Blue: hsl(228, 56%, 26%)
+$Very-Dark-Blue: hsl(229, 57%, 11%)
+
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+body
+    font: 14px 'Raleway', sans-serif
+    background:
+        color: $Very-Dark-Blue
+        image: url('../images/bg-mobile.png')
+        repeat: no-repeat
+        size: cover
+
+.container
+    width: 375px
+    height: 670px
+    margin: auto
+
+    &__section-one
+        width: 326px
+        height: 201px
+        margin: 127px auto 0
+        background-color: $Dark-Blue
+        border-radius: 9px 100px 9px 9px
+        padding: 40px 0 40px 40px
+    &__logo
+        margin-bottom: 30px
+
+    &__options
+        width: 178px
+        height: 48px
+        display: flex
+        justify-content: space-between
+        align-items: center
+
+    &__icon-background
+        width: 50px
+        height: 100%
+        background-color: $Very-Dark-Blue
+        border-radius: 12px
+        display: grid
+        align-content: center
+        justify-content: center
+        &:hover
+            cursor: pointer
+
+    &__section-two
+        width: 326px
+        height: 160px
+        margin: 16px auto 0
+        background-color: $Dark-Blue
+        border-radius: 10px
+        padding: 30px 30px 0 30px
+
+    &__description
+        color: $Grayish-Blue
+        margin-bottom: 15px
+        span
+            color: $Pale-Blue
+            font-weight: 700
+
+    &__storage-background
+        width: 262px
+        height: 20px
+        border-radius: 12px
+        background-color: $Very-Dark-Blue
+        display: grid
+        align-content: center            
+
+    &__storage
+        width: 193px
+        height: 14px
+        margin-left: 4px
+        border-radius: 12px
+        background: linear-gradient(to right, $Gradient-orange, $Gradient-rose)
+        display: grid
+        align-items: center
+        justify-content: flex-end
+
+    &__storage-dot
+        width: 10px
+        height: 10px
+        background-color: $Pale-Blue
+        border-radius: 50%
+        margin-right: 2px
+        margin-bottom: 1px
+
+    &__storage-dates
+        display: flex
+        justify-content: space-between
+        margin-top: 10px
+        color: $Pale-Blue
+        font-weight: 700
+
+    &__storage-busy
+        width: 179px
+        height: 72px
+        position: relative
+        left: 45px
+        top: 15px
+        background-color: $Pale-Blue
+        border-radius: 10px
+        display: grid
+        align-content: center
+        justify-content: center
+        p
+            font-size: 2.2em
+            font-weight: 700
+            letter-spacing: 1px
+            span
+                font-size: 15px
+                text-transform: uppercase
+                color: $Grayish-Blue
+
+.attribution
+    font-size: 11px
+    text-align: center
+    color: $Grayish-Blue
+.attribution
+    a
+        color: $Pale-Blue
+
+
+@media (min-width: 768px)
+    body
+        background:
+            color: $Very-Dark-Blue
+            image: unset
+    .container
+        background:
+            color: $Very-Dark-Blue
+            image: url('../images/bg-desktop.png')
+            size: contain
+            position: bottom
+            repeat: no-repeat
+        width: 1440px
+        height: 800px
+        padding-top: 289px
+        margin: auto
+        display: flex
+        &__section-one
+            width: 350px
+            margin: 0 0 0 260px
+        &__section-two
+            width: 540px
+            height: 154px
+        &__storage-background
+            width: 450px
+        &__storage
+            width: 340px
+        &__storage-busy
+            left: 269px
+            top: -160px
+            border-radius: 10px 10px 0px 10px
+            &::after
+                content: ''
+                position: absolute
+                width: 0
+                height: 0
+                bottom: -22px
+                right: 0
+                border-top: 22px solid $Pale-Blue
+                border-left: 22px solid transparent
+
+        
