@@ -170,7 +170,7 @@ body {
   }
   .container__storage-busy {
     left: 290px;
-    top: -157px;
+    top: -159px;
     border-radius: 10px 10px 0px 10px;
   }
   .container__storage-busy::after {
@@ -182,6 +182,13 @@ body {
     right: 0;
     border-top: 22px solid hsl(243deg, 100%, 93%);
     border-left: 22px solid transparent;
+  }
+  .container__storage-busy p {
+    font-size: 2.9em;
+    padding-bottom: 8px;
+  }
+  .container__storage-busy p span {
+    font-size: 14px;
   }
 }
 
